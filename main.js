@@ -35,13 +35,13 @@ function calcularNota() {
         case nota >= 0 && nota <= 4:
             resultado = "Insuficiente";
             break;
-        case nota > 5:
+        case nota >5 && nota <=6 :
             resultado = "Suficiente";
             break;
-        case nota < 5:
+        case nota >6 && nota <=8:
             resultado = "Notable";
             break;
-        case nota > 5:
+        case nota >8 && nota <=10:
             resultado = "Sobresaliente";
             break;
         default:
@@ -53,7 +53,7 @@ function calcularNota() {
 console.log(calcularNota())
 
 //Con intervalos "en cascada" - Paco's Tip
-
+/*
 function calcularNota() {
     nota = prompt("Introduce una nota")
     nota = +nota
@@ -113,6 +113,7 @@ function clasificacion() {
 }
 
 //console.log(clasificacion())
+*/
 
 // // 3- Crea la función duplicaNumero debe recibir un tipo number y devolver el doble del valor recibido. Si la función no recibe un dato tipo number debe devolver el string ‘Debo ser ejecutada con un número’
 
